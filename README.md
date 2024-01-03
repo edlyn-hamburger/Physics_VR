@@ -24,4 +24,4 @@ command: git commit -m "INSERT RELEVENT MESSAGE HERE"
 Command: git remote add origin https://github.com/edlyn-hamburger/Physics-VR
 
 6. *Pushing changes to remote repo (https://git-scm.com/docs/git-push)*
-command: git push -u orgin main
+command: git push -u orgin master
