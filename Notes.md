@@ -8,12 +8,22 @@ Blender (any recent version)
 
 1/3/24 -- Imported project into new Unity version
 
+1/8/24 -- Worked on main scene, added grass and a door to building
+
 ***TO DO***
+Build scene/level
+Add more assests
+Aestheticize (add textures)
+Fork main repo for me and victor
 Script Cabinets to be interacble
-Aestheticize
+Racetrack with *Free Body Diagrams* (edlyn)
+Pendulm (victor)
+Try to set up unity link (not big priority)
 
 **MISC**
 Unity Link must be set up for Oculus to work with play button otherwise must make a build to device
+
+Unity Link seems to only work or is more stable on windows 10 
 
 ~~Do not include test builds in git file~~
 apk packages were in gitignore file
