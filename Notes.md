@@ -1,6 +1,7 @@
 ***SOFTWARE BEING USED***
 ~~Unity 2021.3.18f1~~
 Unity 2022.3.6f1
+https://docs.unity3d.com/ScriptReference/
 Blender (any recent version)
 
 ***Notes of Work***
@@ -9,6 +10,8 @@ Blender (any recent version)
 1/3/24 -- Imported project into new Unity version
 
 1/8/24 -- Worked on main scene, added grass and a door to building
+
+1/9/24 -- More modeling and simple scripting. Scripting was more to get used to the syntax than anything else
 
 ***TO DO***
 Build scene/level
