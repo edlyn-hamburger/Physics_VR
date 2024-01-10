@@ -13,6 +13,10 @@ Blender (any recent version)
 
 1/9/24 -- More modeling and simple scripting. Scripting was more to get used to the syntax than anything else
 
+1/10/24 created *Model-Interactions Branch*
+***Model-Interactions Branch***
+1/10/24 -- wrote script to open cabinets
+
 ***TO DO***
 Build scene/level
 Add more assests
@@ -35,3 +39,5 @@ apk packages were in gitignore file
 Probuilder sucks ass use at own risk, use blender for more dynamic editing 
 
 When using blender for models make sure scaling is correct otherwise object's scale will be in the hundrends or thousands 
+
+F key focuses in on an object 
