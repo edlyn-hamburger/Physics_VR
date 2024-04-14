@@ -6,11 +6,15 @@ public class cabinetTransform : MonoBehaviour
 {
     private GameObject cabinetDrawer;
     private Vector3 cabinetDrawerPosition; //variable for position of drawer cabinet
+    private Vector3 cabinetOGPosition;
 
-    void Awake()
+
+    void Start()
     {
-        cabinetDrawer = GameObject.FindWithTag("drawer"); //get drawer
-        cabinetDrawerPosition = gameObject.transform.position; // get drawer position
+        cabinetDrawer = GameObject.FindGameObjectWithTag("drawer");
+        Debug.Log(cabinetDrawer.name);
+
+        cabinetDrawerPosition = cabinetDrawer.transform.g;
     }
 
     // Update is called once per frame
@@ -21,10 +25,12 @@ public class cabinetTransform : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Mouse0))
         {
-           
-            gameObject.transform.Translate(0, 0, 1);
-            Debug.Log(cabinetDrawerPosition);
+           if(Mathf.Approximately(cabinetDrawer.)
+
+            cabinetDrawer.transform.Translate(0, 0, 1);
+            Debug.Log(cabinetDrawer.transform.position);
 
         }
+
     }
 }
