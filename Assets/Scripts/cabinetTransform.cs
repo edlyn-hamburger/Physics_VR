@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cabinetTransform : MonoBehaviour
+/**public class cabinetTransform : MonoBehaviour
 {
     private GameObject cabinetDrawer;
     private Vector3 cabinetDrawerPosition; //variable for position of drawer cabinet
@@ -33,4 +33,4 @@ public class cabinetTransform : MonoBehaviour
         }
 
     }
-}
+}**/ 
