@@ -41,3 +41,5 @@ Probuilder sucks ass use at own risk, use blender for more dynamic editing
 When using blender for models make sure scaling is correct otherwise object's scale will be in the hundrends or thousands 
 
 F key focuses in on an object 
+
+UI overlay has to be in world space 
