@@ -863,6 +863,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51b95d5cc00d90540864e06ac7814a1c, type: 2}
     - target: {fileID: -927199367670048503, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
       propertyPath: m_Name
       value: RTC_Straight_Track (8)
@@ -925,6 +929,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51b95d5cc00d90540864e06ac7814a1c, type: 2}
     - target: {fileID: -927199367670048503, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
       propertyPath: m_Name
       value: RTC_Straight_Track (11)
@@ -1111,6 +1119,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51b95d5cc00d90540864e06ac7814a1c, type: 2}
     - target: {fileID: -927199367670048503, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
       propertyPath: m_Name
       value: RTC_Straight_Track (9)
@@ -1359,6 +1371,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51b95d5cc00d90540864e06ac7814a1c, type: 2}
     - target: {fileID: -927199367670048503, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
       propertyPath: m_Name
       value: RTC_Straight_Track (5)
@@ -1545,6 +1561,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51b95d5cc00d90540864e06ac7814a1c, type: 2}
     - target: {fileID: -927199367670048503, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
       propertyPath: m_Name
       value: RTC_Straight_Track (7)
@@ -1607,6 +1627,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51b95d5cc00d90540864e06ac7814a1c, type: 2}
     - target: {fileID: -927199367670048503, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
       propertyPath: m_Name
       value: RTC_Straight_Track (13)
@@ -1669,6 +1693,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51b95d5cc00d90540864e06ac7814a1c, type: 2}
     - target: {fileID: -927199367670048503, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
       propertyPath: m_Name
       value: RTC_Straight_Track (6)
@@ -1917,6 +1945,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51b95d5cc00d90540864e06ac7814a1c, type: 2}
     - target: {fileID: -927199367670048503, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
       propertyPath: m_Name
       value: RTC_Straight_Track (12)
@@ -2103,6 +2135,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51b95d5cc00d90540864e06ac7814a1c, type: 2}
     - target: {fileID: -927199367670048503, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
       propertyPath: m_Name
       value: RTC_Straight_Track (14)
@@ -2227,6 +2263,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51b95d5cc00d90540864e06ac7814a1c, type: 2}
     - target: {fileID: -927199367670048503, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
       propertyPath: m_Name
       value: RTC_Straight_Track (2)
@@ -2289,6 +2329,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51b95d5cc00d90540864e06ac7814a1c, type: 2}
     - target: {fileID: -927199367670048503, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
       propertyPath: m_Name
       value: RTC_Straight_Track
@@ -2351,6 +2395,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51b95d5cc00d90540864e06ac7814a1c, type: 2}
     - target: {fileID: -927199367670048503, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
       propertyPath: m_Name
       value: RTC_Straight_Track (1)
@@ -2413,6 +2461,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51b95d5cc00d90540864e06ac7814a1c, type: 2}
     - target: {fileID: -927199367670048503, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
       propertyPath: m_Name
       value: RTC_Straight_Track (4)
@@ -2599,6 +2651,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51b95d5cc00d90540864e06ac7814a1c, type: 2}
     - target: {fileID: -927199367670048503, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
       propertyPath: m_Name
       value: RTC_Straight_Track (15)
@@ -2785,6 +2841,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51b95d5cc00d90540864e06ac7814a1c, type: 2}
     - target: {fileID: -927199367670048503, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
       propertyPath: m_Name
       value: RTC_Straight_Track (10)
@@ -3033,6 +3093,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51b95d5cc00d90540864e06ac7814a1c, type: 2}
     - target: {fileID: -927199367670048503, guid: 097d9152b650c5e46b5a90e32a0a0506, type: 3}
       propertyPath: m_Name
       value: RTC_Straight_Track (3)
