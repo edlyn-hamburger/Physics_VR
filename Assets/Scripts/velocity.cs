@@ -4,11 +4,11 @@ using Unity.VisualScripting;
 using UnityEditorInternal;
 using UnityEngine;
 
-public class velocity : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     private Rigidbody rb;
     private Transform position;
-    private float endPosition;
+    private float mass; 
     private Collider colider;
     private PhysicMaterial physicMaterial;
     
@@ -19,6 +19,7 @@ public class velocity : MonoBehaviour
         position = GetComponent<Transform>();
         colider = GetComponent<Collider>();
         physicMaterial = colider.material;
+        mass = rb.mass;
 
         StartCoroutine(movingForce()); 
     }
@@ -39,11 +40,11 @@ public class velocity : MonoBehaviour
         
     }**/
 
-    public int Velocity()
+    public void Update()
     {
+        Debug.Log("Friction of track and object:" + physicMaterial.dynamicFriction);
 
-
-        return 0; 
+        //return 0; 
     }
 
     public IEnumerator movingForce()
@@ -53,6 +54,7 @@ public class velocity : MonoBehaviour
             Debug.Log("Inside while statement");
             rb.velocity = new Vector3(0f,0f,5f); //put velocity on object
             Debug.Log("Velocity of object: " + rb.velocity);
+            
             yield return 0;// yield return waits for next frame
         }
   

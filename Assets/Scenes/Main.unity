@@ -2207,11 +2207,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1065727144265086343, guid: 26c64f7856e746b438279843e34d1574, type: 3}
       propertyPath: m_Size.z
-      value: 50
+      value: 305
       objectReference: {fileID: 0}
     - target: {fileID: 1065727144265086343, guid: 26c64f7856e746b438279843e34d1574, type: 3}
       propertyPath: m_Center.z
-      value: 230
+      value: 107
       objectReference: {fileID: 0}
     - target: {fileID: 1065727144265086343, guid: 26c64f7856e746b438279843e34d1574, type: 3}
       propertyPath: m_Material
