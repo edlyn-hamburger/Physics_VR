@@ -4,6 +4,7 @@ using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEditorInternal;
 using UnityEngine;
+using UnityEngine.ProBuilder;
 
 public class PlayerController : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class PlayerController : MonoBehaviour
     private double gravity;
     private float mass;
     private double roadFriction;
+    private double normal;
+    private double rbAddFroce;
+    private double rbRemoveForce;
 
     public void Start()
     {
@@ -27,29 +31,22 @@ public class PlayerController : MonoBehaviour
         physicMaterial = colider.material;
         mass = rb.mass;
         gravity = 9.8;
-        roadFriction = 0.8; //hardcoding statis friction of road
+        normal = mass * gravity;
+        roadFriction = 0.8; //hardcoding static friction of road
 
-        StartCoroutine(movingForce());//calling moving routine
+        
         
     }
 
     public void Update()
     {
-
-
-        
-        if (position.localPosition.z < 207f)
+        while (position.localPosition.z < 207f)
         {
             Debug.Log("Inside if statement");
             rb.AddForce(0f, 0f, 0f);
             Debug.Log("Frictional Force: " + dynamic_Friction() + " N"); //cheking fricitonal force
         }
-        else
-        {
-            rb.AddForce(0f, 0f, 5f);
-            Debug.Log("Inside else statment, local position: " + position.localPosition.z);
-            //Debug.Log("Frictional Force: " + dynamic_Friction() + " N"); //cheking fricitonal force
-        }
+        
 
         
 
@@ -57,17 +54,19 @@ public class PlayerController : MonoBehaviour
 
     public IEnumerator movingForce()
     {
-        while (position.localPosition.z > 207f) //while object is not at end position
-        {
+        
             Debug.Log("Inside while statement");
-            rb.velocity = new Vector3(0f, 0f, 5f); //put velocity on object
 
-
-
+            dynamic_Friction();
             //Debug.Log("Velocity of object: " + rb.velocity);
 
             yield return 0;// yield return waits for next frame
-        }
+        
+
+    }
+
+    public IEnumerator removingFroce()
+    {
 
     }
 
@@ -81,22 +80,28 @@ public class PlayerController : MonoBehaviour
          * **/
 
         double dynamicFriction;
-        double normal;
         double mu;
 
-        normal = mass * gravity;
-        mu = physicMaterial.dynamicFriction;
-
+        mu = physicMaterial.dynamicFriction; 
         dynamicFriction = mu * normal;
 
         return dynamicFriction;
 
     }
 
-    /**public double static_Friction ()
+    public double static_Friction ()
     {
+        /**
+         * same as dynamic **/
 
-    }**/
+        double staticFriction;
+        double mu;
+
+        mu = physicMaterial.staticFriction;
+        staticFriction = mu * normal;
+
+        return staticFriction; 
+    }
 
     
  }
