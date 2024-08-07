@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class frictionVelocity : MonoBehaviour
 {
-    /**private Rigidbody rb;
+    private Rigidbody rb;
     private Transform position;
-    private Collider colider;
+    private Collider objectCollider;
     private PhysicMaterial physicMaterial;
     private Canvas canvas;
    
@@ -15,41 +15,40 @@ public class frictionVelocity : MonoBehaviour
     private double gravity;
     private float mass;
     
-    private double normal;**/
+    private double normal;
+    private bool collisionBool;
 
-    public GameObject car;
-    Mesh mesh;
-    Vector3[] normals;
-    int[] Mytriangles;
-    Vector3[] trianlgeVecotrs;
 
 
 
     public void Start()
     {
-        mesh = car.GetComponent<MeshFilter>().mesh;
-        normals = mesh.normals;
-        Mytriangles = mesh.triangles;
-        trianlgeVecotrs = Mytriangles.;
-       
+        collisionBool = false;
 
-        /**mass = rb.mass;
+        rb = GetComponent<Rigidbody>();
+        objectCollider = GetComponent<Collider>();
+        physicMaterial = objectCollider.material; 
+
+        mass = rb.mass;
         gravity = 9.8;
-        normal = mass * gravity;**/
+        normal = mass * gravity;
     }
 
     public void Update()
     {
-        Debug.Log(Mytriangles.);
-        /**while (position.localPosition.z < 207f)
-        {
-            Debug.Log("Inside if statement");
-            rb.AddForce(0f, 0f, 0f);
-            Debug.Log("Frictional Force: " + dynamic_Friction() + " N"); //cheking fricitonal force
-        }**/
+        Debug.Log(static_Friction());
     }
 
-    /**public IEnumerator movingForce()
+    private bool collisionDetection(Collision collision)
+    {
+
+        collisionBool = true; 
+        return collisionBool;
+        
+    }
+
+
+    public IEnumerator movingForce()
     {
         
             Debug.Log("Inside while statement");
@@ -60,21 +59,21 @@ public class frictionVelocity : MonoBehaviour
             yield return 0;// yield return waits for next frame
         
 
-    }**/
+    }
 
     /**public IEnumerator removingFroce()
     {
 
     }**/
 
-    /**public double dynamic_Friction()
+    public double dynamic_Friction()
     {
         /**
          * friction force is calculated 
          * f = mu * Normal Force 
          * mu = coeficient 
          * Normal Force = mass * gravity
-         * 
+         */
 
         double dynamicFriction;
         double mu;
@@ -90,6 +89,7 @@ public class frictionVelocity : MonoBehaviour
     {
         /**
          * same as dynamic 
+         */
 
         double staticFriction;
         double mu;
@@ -98,5 +98,5 @@ public class frictionVelocity : MonoBehaviour
         staticFriction = mu * normal;
 
         return staticFriction; 
-    }**/
+    }
 }
