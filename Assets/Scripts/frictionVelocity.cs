@@ -10,13 +10,16 @@ public class frictionVelocity : MonoBehaviour
     private Collider objectCollider;
     private PhysicMaterial physicMaterial;
     private Canvas canvas;
+     
    
 
     private double gravity;
     private float mass;
+    private float theta; 
     
     private double normal;
     private bool collisionBool;
+    private Vector3 rotation;
 
 
 
@@ -28,43 +31,34 @@ public class frictionVelocity : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         objectCollider = GetComponent<Collider>();
         physicMaterial = objectCollider.material; 
+        position = GetComponent<Transform>();
 
         mass = rb.mass;
         gravity = 9.8;
         normal = mass * gravity;
+        theta = position.rotation.z; //negative moves rotation to left
+        checkRotation();
+
     }
 
     public void Update()
     {
-        Debug.Log(static_Friction());
-    }
+            
 
-    private bool collisionDetection(Collision collision)
-    {
-
-        collisionBool = true; 
-        return collisionBool;
         
     }
 
-
-    public IEnumerator movingForce()
+    private void checkRotation()
     {
-        
-            Debug.Log("Inside while statement");
-
-            dynamic_Friction();
-            //Debug.Log("Velocity of object: " + rb.velocity);
-
-            yield return 0;// yield return waits for next frame
-        
-
+        if (rotation.z == 0)
+        {
+            Debug.Log("rotation of z is 0" + rotation.z);
+            theta = -25f;
+            position.Rotate(0, 0, theta);
+            Debug.Log("rotation of z is -25" + rotation.z);
+        }
     }
 
-    /**public IEnumerator removingFroce()
-    {
-
-    }**/
 
     public double dynamic_Friction()
     {
@@ -98,5 +92,13 @@ public class frictionVelocity : MonoBehaviour
         staticFriction = mu * normal;
 
         return staticFriction; 
+    }
+
+    public double bankedFriction()
+    {
+
+
+
+        return 0.0; 
     }
 }
