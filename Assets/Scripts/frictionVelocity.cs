@@ -1,64 +1,80 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 
 public class frictionVelocity : MonoBehaviour
 {
     private Rigidbody rb;
     private Transform position;
-    private Collider objectCollider;
+    private Collider carCollider;
     private PhysicMaterial physicMaterial;
-    private Canvas canvas;
-     
+   
+    public GameObject car; 
    
 
     private double gravity;
     private float mass;
-    private float theta; 
     
     private double normal;
-    private bool collisionBool;
-    private Vector3 rotation;
+   
+
+    [SerializeField]
+    //public Collider carWheelColliders;
+    public Collider trackCollider; 
 
 
 
 
     public void Start()
     {
-        collisionBool = false;
+        //collisionBool = false;
 
-        rb = GetComponent<Rigidbody>();
-        objectCollider = GetComponent<Collider>();
-        physicMaterial = objectCollider.material; 
+        carCollider = GetComponent<Collider>();
+        carCollider.enabled = false;
+        physicMaterial = carCollider.material; 
         position = GetComponent<Transform>();
 
-        mass = rb.mass;
+        
         gravity = 9.8;
         normal = mass * gravity;
-        theta = position.rotation.z; //negative moves rotation to left
-        checkRotation();
+        //theta = position.rotation.z; negative moves rotation to left
+
+        //carWheelColliders = GetComponent<Collider>();
+
+
+       
 
     }
 
+    /*private void OnCollisionStay(Collision collision)
+    {
+        rb.AddForce(0f, 0f, 5f);
+    }*/
+
+   
     public void Update()
     {
-            
 
-        
-    }
 
-    private void checkRotation()
-    {
-        if (rotation.z == 0)
+       if(Input.GetKeyDown("space"))
         {
-            Debug.Log("rotation of z is 0" + rotation.z);
-            theta = -25f;
-            position.Rotate(0, 0, theta);
-            Debug.Log("rotation of z is -25" + rotation.z);
+            carCollider.enabled = true;
+            car.AddComponent<Rigidbody>();
+            rb = GetComponent<Rigidbody>();
+            //rb.
+            mass = rb.mass;
         }
+
+        //Debug.Log("Velocity" + rb.velocity.magnitude);
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        rb.AddForce(transform.forward * 20);
+    }
 
     public double dynamic_Friction()
     {
@@ -94,11 +110,4 @@ public class frictionVelocity : MonoBehaviour
         return staticFriction; 
     }
 
-    public double bankedFriction()
-    {
-
-
-
-        return 0.0; 
-    }
 }
