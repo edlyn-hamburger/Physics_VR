@@ -8,7 +8,8 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 8404be70184654265930450def6a9037, type: 3}
-  generateWrapperCode: 0
-  wrapperCodePath: 
+  generateWrapperCode: 1
+  wrapperCodePath: Assets/Samples/XR Interaction Toolkit/2.4.3/Starter Assets/Scripts/XRI
+    Default Input Actions.cs
   wrapperClassName: 
   wrapperCodeNamespace: 
